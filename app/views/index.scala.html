@@ -1,7 +1,48 @@
 @(message: String)
 
-@main("Welcome to Play") {
+@main("Ngapak Weather") {
 
-    @play20.welcome(message, style = "Java")
+<div class="panel page-title">
+    <h4> </h4>
+</div>
+<div class="main-body">
 
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+            </div>
+        </div>
+    </div>
+
+    <div class="container wrapper form-horizontal">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="header">
+                    <center>
+                        <h1><span id="tesMalarkey"></span></h1>
+                    </center>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-xs-12">
+                <div class="block-title block-title-first">
+                    <div class="col-md-8">
+                        <h3><span>NGAPAK WEATHER</span></h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="panel-body">
+                            <div style="float: left; width: 300px" class="col-sm-8 col-md-9">
+                                <img src="@routes.Assets.at("images/bulanAwan.jpg")">
+                            </div>
+                            <div style="float: left; width: 350px" class="col-sm-8 col-md-9">
+                            <span class="large-temp"></span>
+                            <span class="city"></span>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 }
